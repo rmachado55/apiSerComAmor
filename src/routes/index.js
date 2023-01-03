@@ -1,5 +1,6 @@
 import express from "express";
 import login from './loginRoutes.js'
+import balanco from './balancoRoutes.js'
 import responsavel from './responsaveisRoutes.js';
 
 const routes = (app) => {
@@ -11,6 +12,7 @@ const routes = (app) => {
     express.json(),
     login,
     responsavel,
+    balanco,
     )
 }
 
